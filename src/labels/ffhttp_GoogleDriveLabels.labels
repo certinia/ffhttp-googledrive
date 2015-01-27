@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>ffhttp_gdrive_NullFile</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File cannot be null</shortDescription>
+        <value>File cannot be null</value>
+    </labels>
+    <labels>
+        <fullName>ffhttp_gdrive_NullFileId</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File ID cannot be null</shortDescription>
+        <value>File ID cannot be null</value>
+    </labels>
+    <labels>
+        <fullName>ffhttp_gdrive_NullComment</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Comment cannot be null</shortDescription>
+        <value>Comment cannot be null</value>
+    </labels>
+    <labels>
+        <fullName>ffhttp_gdrive_NullCommentId</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Comment ID cannot be null</shortDescription>
+        <value>Comment ID cannot be null</value>
+    </labels>
+</CustomLabels>
