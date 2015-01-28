@@ -13,6 +13,8 @@ An Apex framework has been created to provide functionality for Google Drive API
 
 This library extends the [Core](https://github.com/financialforcedev/ffhttp-core) library to provide access to Google Drive API calls found at https://developers.google.com/drive/v2/reference/.
 
+Samples demonstrating the use of this library can be found [here](https://github.com/financialforcedev/ffhttp-googledrive-samples).
+
 Key Features
 ------------
 
