@@ -93,7 +93,7 @@ This requires the [OAuth Sample App](https://githubsfdeploy.herokuapp.com?owner=
 9. Set the **Redirect URI** to the same URL as you set in step 12 in the Create an app in Google section.
 10. Make sure that **Scope Required** is checked.
 11. For full access to Google Drive add https://www.googleapis.com/auth/drive as the scope. Otherwise, if you want to limit access to Google Drive choose one of the scopes defined below.
-12. Set the **Extra Url Parameters** to **access_type=offline**. Setting **access_type** to offline means that Google Drive supplies a refresh token with the access token which is required if you do not wish to reautheniticate with Google Drive every time the access token expires.
+12. Set the **Extra Url Parameters** to **access_type=offline**. Setting **access_type** to offline means that Google Drive supplies a refresh token with the access token which is required if you do not wish to reauthenticate with Google Drive every time the access token expires.
 13. **Save** the Connector Type.
 14. Select **New Connector**.
 15. Set the **Connector Name** and save. 
