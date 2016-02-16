@@ -69,7 +69,7 @@ public abstract class ffhttp_GoogleDriveModelAbstractObject extends ffhttp_Abstr
 																		//requests where the first request includes the metadata.
 	
 	//Instance Variables
-	private String kind;	//The kind of Google Mirror object
+	private String kind;	//The kind of Google Drive object
 
 	/**
 	 * Constructor
