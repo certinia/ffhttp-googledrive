@@ -310,7 +310,7 @@ private class ffhttp_GoogleDriveTest
 		
 		listRequest.setAppFilterExtensions('doc').setAppFilterMimeTypes('application/vnd.google-apps.drawing').setLanguageCode('en-GB');
 		
-		assertRequestEndpointAndMethod(listRequest, 'https://www.googleapis.com/drive/v2/apps/?languageCode=en-GB&appFilterExtensions=doc&appFilterMimeTypes=application%2Fvnd.google-apps.drawing', 'GET');
+		assertRequestEndpointAndMethod(listRequest, 'https://www.googleapis.com/drive/v2/apps/?appFilterExtensions=doc&appFilterMimeTypes=application%2Fvnd.google-apps.drawing&languageCode=en-GB', 'GET');
 		
 		System.assertEquals(listRequest.getAppFilterExtensions(), 'doc');
 		System.assertEquals(listRequest.getAppFilterMimeTypes(), 'application/vnd.google-apps.drawing');
