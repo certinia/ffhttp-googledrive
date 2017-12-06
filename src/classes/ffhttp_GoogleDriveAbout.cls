@@ -88,7 +88,7 @@ public with sharing class ffhttp_GoogleDriveAbout extends ffhttp_GoogleDriveReso
 		}
 		public Long getMaxChangeIdCount()
 		{
-			return getParam('maxChangeIdCount', 1000);
+			return getParam('maxChangeIdCount', 1000L);
 		}
 		public GetRequest setMaxChangeIdCount(Long maxChangeIdCount)
 		{	
@@ -97,7 +97,7 @@ public with sharing class ffhttp_GoogleDriveAbout extends ffhttp_GoogleDriveReso
 		}
 		public Long getStartChangeId()
 		{
-			return getParam('startChangeId', 0);
+			return getParam('startChangeId', 0L);
 		}
 		public GetRequest setStartChangeId(Long startChangeId)
 		{	

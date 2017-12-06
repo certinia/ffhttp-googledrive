@@ -159,7 +159,7 @@ public with sharing class ffhttp_GoogleDriveProperties extends ffhttp_GoogleDriv
 		 */
 		public String getVisibility()
 		{
-			return getParam('visibility');
+			return getParam('visibility', (String)null);
 		}
 		public DeleteRequest setVisibility(String visibility)
 		{
@@ -181,7 +181,7 @@ public with sharing class ffhttp_GoogleDriveProperties extends ffhttp_GoogleDriv
 		 */
 		public String getVisibility()
 		{
-			return getParam('visibility');
+			return getParam('visibility', (String)null);
 		}
 		public GetRequest setVisibility(String visibility)
 		{
@@ -221,7 +221,7 @@ public with sharing class ffhttp_GoogleDriveProperties extends ffhttp_GoogleDriv
 		 */
 		public String getVisibility()
 		{
-			return getParam('visibility');
+			return getParam('visibility', (String)null);
 		}
 		public UpdateRequest setVisibility(String visibility)
 		{

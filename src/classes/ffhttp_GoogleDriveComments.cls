@@ -209,7 +209,7 @@ public with sharing class ffhttp_GoogleDriveComments extends ffhttp_GoogleDriveR
 		}
 		public String getPageToken()
 		{
-			return getParam('pageToken');
+			return getParam('pageToken', (String)null);
 		}
 		public ListRequest setPageToken(String pageToken)
 		{
@@ -218,7 +218,7 @@ public with sharing class ffhttp_GoogleDriveComments extends ffhttp_GoogleDriveR
 		}
 		public String getUpdatedMin()
 		{
-			return getParam('updatedMin');
+			return getParam('updatedMin', (String)null);
 		}
 		public ListRequest setUpdatedMin(String updatedMin)
 		{

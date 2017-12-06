@@ -37,10 +37,10 @@ private class ffhttp_GoogleDriveTest
 {
 	static testMethod void testGoogleDriveClient()
 	{
-		ffhttp_Client.Credentials credentials = new ffhttp_Client.Credentials('Bearer', 'Test');
+		ffhttp_Client.IAccessTokenCredentials credentials = new ffhttp_Client.AccessTokenCredentials('Bearer', 'Test');
 		ffhttp_GoogleDrive gd = new ffhttp_GoogleDrive(credentials);
 		
-		System.assertEquals(gd.getCredentials().getAccessToken(), 'Test');
+		System.assertEquals(((ffhttp_Client.IAccessTokenCredentials)gd.getCredentials()).getAccessToken(), 'Test');
 	}
 	
 	/**
@@ -191,7 +191,7 @@ private class ffhttp_GoogleDriveTest
 		System.assertEquals(listRequest.getPageToken(), null);
 		System.assertEquals(listRequest.getQ(), null);
 		System.assertEquals(listRequest.getFields(), null);
-		
+
 		listRequest.setCorpus('DOMAIN').setMaxResults(20).setPageToken('ghdjgh').setQ('title=\'Testing\'')
 				   .setFields('items(id,title)');
 				   
@@ -241,7 +241,7 @@ private class ffhttp_GoogleDriveTest
 	
 	private static ffhttp_GoogleDrive createGoogleDrive()
 	{
-		return new ffhttp_GoogleDrive(new ffhttp_Client.Credentials('Bearer', 'Dummy Access Token'));
+		return new ffhttp_GoogleDrive(new ffhttp_Client.AccessTokenCredentials('Bearer', 'Dummy Access Token'));
 	}
 	
 	private static ffhttp_GoogleDriveFiles createGoogleDriveFiles()
@@ -309,7 +309,7 @@ private class ffhttp_GoogleDriveTest
 		System.assertEquals(listRequest.getLanguageCode(), null);
 		
 		listRequest.setAppFilterExtensions('doc').setAppFilterMimeTypes('application/vnd.google-apps.drawing').setLanguageCode('en-GB');
-		
+
 		assertRequestEndpointAndMethod(listRequest, 'https://www.googleapis.com/drive/v2/apps/?appFilterExtensions=doc&appFilterMimeTypes=application%2Fvnd.google-apps.drawing&languageCode=en-GB', 'GET');
 		
 		System.assertEquals(listRequest.getAppFilterExtensions(), 'doc');

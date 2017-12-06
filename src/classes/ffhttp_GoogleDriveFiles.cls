@@ -308,7 +308,7 @@ public with sharing class ffhttp_GoogleDriveFiles extends ffhttp_GoogleDriveReso
 		}
 		public String getOcrLanguage()
 		{
-			return getParam('ocrLanguage');
+			return getParam('ocrLanguage', (String)null);
 		}
 		public InsertRequest setOcrLanguage(String ocrLanguage)
 		{
@@ -326,7 +326,7 @@ public with sharing class ffhttp_GoogleDriveFiles extends ffhttp_GoogleDriveReso
 		}
 		public String getTimedTextLanguage()
 		{
-			return getParam('timedTextLanguage');
+			return getParam('timedTextLanguage', (String)null);
 		}
 		public InsertRequest setTimedTextLanguage(String timedTextLanguage)
 		{
@@ -335,7 +335,7 @@ public with sharing class ffhttp_GoogleDriveFiles extends ffhttp_GoogleDriveReso
 		}
 		public String getTimedTextTrackName()
 		{
-			return getParam('timedTextTrackName');
+			return getParam('timedTextTrackName', (String)null);
 		}
 		public InsertRequest setTimedTextTrackName(String timedTextTrackName)
 		{
@@ -381,7 +381,7 @@ public with sharing class ffhttp_GoogleDriveFiles extends ffhttp_GoogleDriveReso
 		 */
 		public String getAddParents()
 		{
-			return getParam('addParents');
+			return getParam('addParents', (String)null);
 		}
 		public UpdateRequest setAddParents(String addParents)
 		{
@@ -417,7 +417,7 @@ public with sharing class ffhttp_GoogleDriveFiles extends ffhttp_GoogleDriveReso
 		}
 		public String getOcrLanguage()
 		{
-			return getParam('ocrLanguage');
+			return getParam('ocrLanguage', (String)null);
 		}
 		public UpdateRequest setOcrLanguage(String ocrLanguage)
 		{
@@ -435,7 +435,7 @@ public with sharing class ffhttp_GoogleDriveFiles extends ffhttp_GoogleDriveReso
 		}
 		public String getRemoveParents()
 		{
-			return getParam('removeParents');
+			return getParam('removeParents', (String)null);
 		}
 		public UpdateRequest setRemoveParents(String removeParents)
 		{
@@ -453,7 +453,7 @@ public with sharing class ffhttp_GoogleDriveFiles extends ffhttp_GoogleDriveReso
 		}
 		public String getTimedTextLanguage()
 		{
-			return getParam('timedTextLanguage');
+			return getParam('timedTextLanguage', (String)null);
 		}
 		public UpdateRequest setTimedTextLanguage(String timedTextLanguage)
 		{
@@ -462,7 +462,7 @@ public with sharing class ffhttp_GoogleDriveFiles extends ffhttp_GoogleDriveReso
 		}
 		public String getTimedTextTrackName()
 		{
-			return getParam('timedTextTrackName');
+			return getParam('timedTextTrackName', (String)null);
 		}
 		public UpdateRequest setTimedTextTrackName(String timedTextTrackName)
 		{
@@ -520,7 +520,7 @@ public with sharing class ffhttp_GoogleDriveFiles extends ffhttp_GoogleDriveReso
 		}
 		public String getOcrLanguage()
 		{
-			return getParam('ocrLanguage');
+			return getParam('ocrLanguage', (String)null);
 		}
 		public CopyRequest setOcrLanguage(String ocrLanguage)
 		{
@@ -538,7 +538,7 @@ public with sharing class ffhttp_GoogleDriveFiles extends ffhttp_GoogleDriveReso
 		}
 		public String getTimedTextLanguage()
 		{
-			return getParam('timedTextLanguage');
+			return getParam('timedTextLanguage', (String)null);
 		}
 		public CopyRequest setTimedTextLanguage(String timedTextLanguage)
 		{
@@ -547,7 +547,7 @@ public with sharing class ffhttp_GoogleDriveFiles extends ffhttp_GoogleDriveReso
 		}
 		public String getTimedTextTrackName()
 		{
-			return getParam('timedTextTrackName');
+			return getParam('timedTextTrackName', (String)null);
 		}
 		public CopyRequest setTimedTextTrackName(String timedTextTrackName)
 		{
@@ -604,7 +604,7 @@ public with sharing class ffhttp_GoogleDriveFiles extends ffhttp_GoogleDriveReso
 		}
 		public String getPageToken()
 		{	
-			return getParam('pageToken');
+			return getParam('pageToken', (String)null);
 		}
 		public ListRequest setPageToken(String pageToken)
 		{
@@ -613,7 +613,7 @@ public with sharing class ffhttp_GoogleDriveFiles extends ffhttp_GoogleDriveReso
 		}
 		public String getQ()
 		{
-			return getParam('q');
+			return getParam('q', (String)null);
 		}
 		public ListRequest setQ(String q)
 		{

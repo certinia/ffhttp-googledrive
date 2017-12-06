@@ -193,7 +193,7 @@ public with sharing class ffhttp_GoogleDrivePermissions extends ffhttp_GoogleDri
 		 */
 		public String getEmailMessage()
 		{
-			return getParam('emailMessage');
+			return getParam('emailMessage', (String)null);
 		}
 		public InsertRequest setEmailMessage(String emailMessage)
 		{
