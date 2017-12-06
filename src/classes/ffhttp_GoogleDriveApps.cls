@@ -104,7 +104,7 @@ public with sharing class ffhttp_GoogleDriveApps extends ffhttp_GoogleDriveResou
 		 */
 		public String getAppFilterExtensions()
 		{
-			return getParam('appFilterExtensions');
+			return getParam('appFilterExtensions', (String)null);
 		}
 		public ListRequest setAppFilterExtensions(String appFilterExtensions)
 		{
@@ -113,7 +113,7 @@ public with sharing class ffhttp_GoogleDriveApps extends ffhttp_GoogleDriveResou
 		}
 		public String getAppFilterMimeTypes()
 		{
-			return getParam('appFilterMimeTypes');
+			return getParam('appFilterMimeTypes', (String)null);
 		}
 		public ListRequest setAppFilterMimeTypes(String appFilterMimeTypes)
 		{
@@ -122,7 +122,7 @@ public with sharing class ffhttp_GoogleDriveApps extends ffhttp_GoogleDriveResou
 		}
 		public String getLanguageCode()
 		{
-			return getParam('languageCode');
+			return getParam('languageCode', (String)null);
 		}
 		public ListRequest setLanguageCode(String languageCode)
 		{

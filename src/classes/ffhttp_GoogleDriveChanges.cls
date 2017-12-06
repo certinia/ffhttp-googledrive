@@ -138,7 +138,7 @@ public with sharing class ffhttp_GoogleDriveChanges extends ffhttp_GoogleDriveRe
 		}
 		public String getPageToken()
 		{	
-			return getParam('pageToken');
+			return getParam('pageToken', (String)null);
 		}
 		public ListRequest setPageToken(String pageToken)
 		{

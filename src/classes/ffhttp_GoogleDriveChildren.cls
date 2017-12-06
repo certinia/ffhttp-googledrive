@@ -178,7 +178,7 @@ public with sharing class ffhttp_GoogleDriveChildren extends ffhttp_GoogleDriveR
 		}
 		public String getPageToken()
 		{	
-			return getParam('pageToken');
+			return getParam('pageToken', (String)null);
 		}
 		public ListRequest setPageToken(String pageToken)
 		{
@@ -187,7 +187,7 @@ public with sharing class ffhttp_GoogleDriveChildren extends ffhttp_GoogleDriveR
 		}
 		public String getQ()
 		{
-			return getParam('q');
+			return getParam('q', (String)null);
 		}
 		public ListRequest setQ(String q)
 		{

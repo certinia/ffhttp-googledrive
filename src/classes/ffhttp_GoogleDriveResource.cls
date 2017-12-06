@@ -191,7 +191,7 @@ public abstract class ffhttp_GoogleDriveResource
 	 	
 		public String getFields() 
 		{
-			return getParam('fields');
+			return getParam('fields', (String)null);
 		}
 		public GoogleDriveRequest setFields(String fieldList) 
 		{
