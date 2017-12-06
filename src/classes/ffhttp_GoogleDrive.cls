@@ -40,7 +40,7 @@ public with sharing class ffhttp_GoogleDrive extends ffhttp_Client.AbstractClien
      * @param credentials HTTP request credentials required for authentication.
      * @return The Google Drive API HTTP client giving access to all API calls.
      */
-	public ffhttp_GoogleDrive(ffhttp_Client.Credentials credentials) 
+	public ffhttp_GoogleDrive(ffhttp_Client.ICredentials credentials) 
 	{ 
 		this.setCredentials(credentials);
 	}
