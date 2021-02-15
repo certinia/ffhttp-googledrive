@@ -688,7 +688,7 @@ public with sharing class ffhttp_GoogleDriveFiles extends ffhttp_GoogleDriveReso
 		ExportRequest(ffhttp_GoogleDriveFiles files, String fileId)
 		{
 			super(files, METADATA_ENDPOINT, ENDPOINT_FILES + fileId + URL_SEPARATOR + COMMAND_EXPORT, REQUEST_METHOD_GET, null, 
-				  new ffhttp_JsonDeserializer(ffhttp_GoogleDriveModelFile.class));
+				  null);
 		}
 		
 		/**
