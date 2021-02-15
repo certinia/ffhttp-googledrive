@@ -238,6 +238,17 @@ private class ffhttp_GoogleDriveTest
 		ffhttp_GoogleDriveFiles.EmptyTrashRequest emptyTrashRequest = files.emptyTrashRequest();
 		assertRequestEndpointAndMethod(emptyTrashRequest, 'https://www.googleapis.com/drive/v2/files/trash', 'DELETE');
 	}
+
+	static testMethod void ffhttp_GoogleDriveFilesExportRequest()
+	{
+		ffhttp_GoogleDriveFiles files = createGoogleDriveFiles();
+		ffhttp_GoogleDriveFiles.ExportRequest exportRequest = files.exportRequest('0B94302Tka2HWkNrOElaaUxQaUU');
+		assertRequestEndpointAndMethod(exportRequest, 'https://www.googleapis.com/drive/v2/files/0B94302Tka2HWkNrOElaaUxQaUU/export', 'GET');
+	
+		System.assertEquals(exportRequest.getMimeType(), 'null');
+		exportRequest.setMimeType('text/html');
+		System.assertEquals(exportRequest.getMimeType(), 'text/html');
+	}
 	
 	private static ffhttp_GoogleDrive createGoogleDrive()
 	{
