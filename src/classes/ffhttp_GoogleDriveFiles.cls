@@ -244,6 +244,23 @@ public with sharing class ffhttp_GoogleDriveFiles extends ffhttp_GoogleDriveReso
 	{
 		return new EmptyTrashRequest(this);
 	}
+
+	/**
+	* Exports a Google Doc to the requested MIME type and returns the exported content. 
+	* Please note that the exported content is limited to 10MB. 
+	*
+	* Create a request for the method "files.export".
+	*
+	* This request holds the parameters needed by the drive server. After setting any optional
+	* parameters, call the execute method to invoke the remote operation.
+	*
+	* @param fileId The ID for the file in question.
+    * @return the request
+	*/
+	public ExportRequest exportRequest(String fileId)
+	{
+		return new ExportRequest(this, fileId);
+	}
 	
 	/*********************************************************************************************************
 	 * API Callout Inner Classes
@@ -663,6 +680,28 @@ public with sharing class ffhttp_GoogleDriveFiles extends ffhttp_GoogleDriveReso
 		EmptyTrashRequest(ffhttp_GoogleDriveFiles files)
 		{
 			super(files, METADATA_ENDPOINT, ENDPOINT_FILES + COMMAND_TRASH, REQUEST_METHOD_DELETE, null, null);
+		}
+	}
+
+	public class ExportRequest extends GoogleDriveRequest
+	{
+		ExportRequest(ffhttp_GoogleDriveFiles files, String fileId)
+		{
+			super(files, METADATA_ENDPOINT, ENDPOINT_FILES + fileId + URL_SEPARATOR + COMMAND_EXPORT, REQUEST_METHOD_GET, null, 
+				  new ffhttp_JsonDeserializer(ffhttp_GoogleDriveModelFile.class));
+		}
+		
+		/**
+		 * Request parameters
+		 */
+		public String getMimeType()
+		{
+			return getParam('mimeType', (String) null);
+		}
+		public ExportRequest setMimeType(String mimeType)
+		{
+			addParam('mimeType', mimeType);
+			return this;
 		}
 	}
 }

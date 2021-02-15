@@ -67,6 +67,7 @@ public abstract class ffhttp_GoogleDriveResource
 	public static final String COMMAND_STOP = 'stop';
 	public static final String COMMAND_UNTRASH = 'untrash';
 	public static final String COMMAND_WATCH = 'watch';
+	public static final String COMMAND_EXPORT = 'export';
 	
 	public static final String URL_SEPARATOR = '/';
 	
